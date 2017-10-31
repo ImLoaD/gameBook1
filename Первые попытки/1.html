@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <canvas id="canvasId" width="800" height="600" style="border: 1px solid black;">
+    Ваш браузер не поддерживает элемент canvas
+  </canvas>
+  <script type="text/javascript">
+    var canvas = document.getElementById('canvasId');
+    var ctx = canvas.getContext('2d');
+    ctx.moveTo(50, 70); // Курсор
+    ctx.lineTo(100, 50); // Линия
+    ctx.stroke(); // Заливка
+  </script>
+</body>
+</html>
